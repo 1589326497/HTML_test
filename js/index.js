@@ -59,3 +59,7 @@ const {firstNamem,lastName,address:{state}}=person;//同名的变量将值从per
 console.log(lastName);
 console.log(state);
 
+person.email='1589326497@qq.com';
+
+console.log(person);
+
