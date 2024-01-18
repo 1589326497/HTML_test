@@ -134,3 +134,4 @@ while(i<10){
     console.log(`For Loop Number:${i}`);
     i++;
 }
+
