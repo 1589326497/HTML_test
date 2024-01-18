@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_DOM</title>
+</head>
+<body>
+    <div id="box1">这是一个ID选择器标签</div>
+    <div class="box2">这是一个类选择器标签</div>
+    <div>普通的div 标签</div>
+    
+    <button>点击按钮</button>
+    <script>
+        //获取标签
+        let element_id=document.getElementById('box1');
+        console.log(element_id);
+
+        //获取的是一个数组
+        let element_class=document.getElementsByClassName('box2')[0];
+        console.log(element_class);
+
+        let element_tag=document.getElementsByTagName('div')[2];
+        console.log(element_tag);
+
+        //修改标签
+        element_id.innerHTML='<a href="https://www.runoob.com/jsref/dom-obj-event.html">跳转连接</a>';
+        element_class.innerText='修改后的类选择文本'
+
+        // DOM属性绑定事件
+        let button_element=document.getElementsByTagName('button')[0];
+        //方法1使用对象的onclick方法
+        button_element.onclick=function(){
+            alert("DOM属性触发按键")
+        }
+        //方法2使用DOM对象的addEventListener方法
+        button_element.addEventListener('click',function(){
+            alert("addEventListener属性触发按键")
+        })
+    </script>
+</body>
+</html>

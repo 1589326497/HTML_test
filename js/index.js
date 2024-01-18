@@ -135,3 +135,22 @@ while(i<10){
     i++;
 }
 
+// 函数
+//作用域 函数里面声明的变量有局部作用域 函数外声明的变量有全局作用域
+function hello_1(){
+    console.log("hello,world");
+}
+hello_1();
+
+function hello_return(){
+    return "hello,worle";
+}
+
+console.log(hello_return());
+
+function hello_params(name){
+    console.log(`hello ${name}`);
+}
+hello_params("如花");
+
+//事件

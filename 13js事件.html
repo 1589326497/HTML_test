@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js事件</title>
+</head>
+<body>
+    <button onclick="click_event()">按钮</button>
+    <input type="text" onforus="forus_event" onblur="blur_event">
+    <script>
+        //点击事件
+        function click_event(){
+            alert('点击事件触发');
+        }
+        //聚焦事件
+        function forus_event(){
+            console.log("聚焦事件")
+        }
+        //失去聚焦事件
+        function blur_event(){
+            console.log("失去聚焦事件")
+        }
+    </script>
+</body>
+</html>
