@@ -41,7 +41,7 @@ console.log(first);
 first.pop();
 console.log(first);
 console.log(Array.isArray(first));
-console.log(numbers.indexOf(1));
+console.log(numbers.indexOf(1));                                                                                     
 
 //对象
 const person={
@@ -63,3 +63,22 @@ person.email='1589326497@qq.com';
 
 console.log(person);
 
+// 对象数组
+const todos=[
+    {
+        id:1,
+        text:"Take out trash",
+        isCompleted:true,
+    },
+    {
+        id:2,
+        text:"Meeting with boss",
+        isCompleted:true,
+    },
+    {
+        id:3,
+        text:"Dentist appt",
+        isCompleted:false,
+    },
+];
+console.log(todos);
