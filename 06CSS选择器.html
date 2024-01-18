@@ -18,10 +18,14 @@
         #header{
             font-size: 35px;
         }
-        /* 这是通用选择器 */
+        /* 这是通用选择器  选择所有的标签*/
         *{
             font-family:"kaiti" ;
             font-weight: 500;
+        }
+        /* 复合选择器 */
+        h1.my-p{
+            color: rgb(223, 5, 205);
         }
         /* 子元素选择器 */
         .father>.son{
@@ -47,6 +51,7 @@
 <body>
     <h1>不同类型的CSS选择器</h1>
     <h1>这是一个元素选择器示例</h1>
+    <h1 class="my-p">类型为my-p的选择器</h1>
     <h3 class="highight">这是一个类选择器示例</h3>
 
     <h3>这是另外一个类选择器示例</h3>
